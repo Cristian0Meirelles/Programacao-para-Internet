@@ -12,7 +12,7 @@ body {
 }
 
 header, nav, main, article, aside, footer {
-  background-color: rgba(0,255,0,0.5);
+  background-color: rgba(86, 138, 146, 0.5);
   padding: 1%;
 }
 
@@ -45,6 +45,10 @@ h3 {
   font-size: 2.2rem;
 }
 
+td {
+  font-size: 1.5rem;
+}
+
 /* Cabeçalho (header) e menu principal (nav) */
 
 header {
@@ -52,7 +56,7 @@ header {
 }
 
 nav {
-  height: 50px;
+  height: 70px;
 }
 
 nav ul {
@@ -88,6 +92,7 @@ article {
 }
 
 aside {
+  
   flex: 1;
   margin-left: 10px;
   padding: 1%;
@@ -98,14 +103,15 @@ footer {
   text-align: center;
 }
 
-#img-fundo {
-  border: 1px solid black;
+#img-fundo{
   width: 500px;
   height: 600px;
+  border: 1px solid black;
   background-image: url("images/dinosaur.jpg");
 }
 
-video {
-  width: 500px;
-  height: 600px;
+/* Tabelas */
+
+td {
+  border: 1px solid black;
 }

@@ -3,23 +3,22 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Título da página</title>
+    <title>Programação para Internet I</title>
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
 
     <header>
-      <h1>Cabeçalho da página</h1>
+      <h1>Programação para Internet I</h1>
     </header>
 
     <nav>
       <ul>
-        <li><span>Menu</span></li>
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 2</a></li>
-        <li><a href="#">Link 3</a></li>
-        <li><a href="#">Link 4</a></li>
+        <li><a href="introduction.html">Introdução à HTML</a></li>
+        <li><a href="hyperlinks.html">Hiperlinks</a></li>
+        <li><a href="#">Multimídia e incorporação</a></li>
+        <li><a href="tables.html">Tabelas</a></li>
       </ul>
     </nav>
 
@@ -27,42 +26,52 @@
 
       <article>
         <h2>Multimídia e incorporação</h2>
-        
-        <h3>Imagens</h3>
+
+        <h3>Imagens</h1>
 
         <p>Incorporando uma imagem:</p>
-
+        
         <figure>
           <img src="images/dinosaur.jpg"
           alt="The head and torso of a dinosaur skeleton; it has a large head with long sharp teeth"
           width="400"
           height="341"
-          title="Uma mensagem explicativa quando o elemento está sob o ponteiro do mouse">
-          <figcaption>Título desta figura</figcaption>
-        </figure>
+          title="A T-Rex on display in the Manchester University Museum">
+          <figcaption>Título da figura</figcaption>
+         </figure>
 
-        <p>Imagem como fundo de um elemento</p>
+        <p>Imagem como fundo de um elemento:</p>
+        
+        <p id="img-fundo">Este elemento é um parágrafo. </p>
 
-        <p id="img-fundo">Este elemento é um parágrafo</p>
+        <h3>Videos</h1>
 
-        <p>Inserindo videos</p>
+        <p>Incorporando um video:</p>
 
-        <video src="videos/rabbit320.webm" controls muted loop
-        poster="images/dinosaur.jpg">
-          <p>Your browser doesn't support HTML5 video.</p>
+        <video src="videos/rabbit320.webm" controls>
+          <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.webm">link to the video</a> instead.</p>
+        </video>
+
+        <p>Com os atributos autoplay e muted:</p>
+
+        <video src="videos/rabbit320.webm" autoplay muted>
+          <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.webm">link to the video</a> instead.</p>
         </video>
 
       </article>
 
       <aside>
         <h3>Informações adicionais</h3>
-        <p>Texto complementar do artigo.</p>
+        <p>Esta página está utilizando os elementos semânticos do padrão HTML 5,
+          para atribuir significado às seções da página.
+        </p>
       </aside>
 
-	</main>
+    </main>
 
     <footer>
-      <p>Rodapé da página</p>
+      <p> Referências: <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" 
+        target="_blank">Mozilla MDN Web Docs</a></p>
     </footer>
 
   </body>
